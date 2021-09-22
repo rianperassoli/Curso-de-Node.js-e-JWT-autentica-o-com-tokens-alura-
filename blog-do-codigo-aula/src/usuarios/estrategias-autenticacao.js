@@ -21,7 +21,7 @@ async function verificaSenha(senha, senhaHash) {
   return senhaValida
 }
 
-passport.use([
+passport.use(
   new LocalStrategy({
     usernameField: 'email',
     passwordField: 'senha',
@@ -38,4 +38,4 @@ passport.use([
       done(error)
     }
   })
-])
+)
