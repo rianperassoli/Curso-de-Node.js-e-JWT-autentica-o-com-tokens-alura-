@@ -2,7 +2,7 @@ const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
 const BearerStrategy = require('passport-http-bearer').Strategy
 const bcrypt = require('bcrypt')
-const jwt - require('jsonwebtoken')
+const jwt = require('jsonwebtoken')
 
 const Usuario = require('./usuarios-modelo')
 const { InvalidArgumentError } = require('../erros')
